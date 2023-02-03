@@ -1,0 +1,27 @@
+const mongoose = require('mongoose');
+
+// Tags
+
+const StepFourSchema = new mongoose.Schema({
+	title: {
+		type: String,
+		unique: false,
+	},
+	status: {
+		type: String,
+		default: 'not_selected',
+		enum: ['selected', 'not_selected'],
+		unique: false,
+	},
+	createdAt: {
+		type: Date,
+		default: Date.now,
+	},
+	version: {
+		type: mongoose.Schema.ObjectId,
+		ref: 'Version',
+		required: false,
+	},
+});
+
+module.exports = mongoose.model('StepFour', StepFourSchema);
