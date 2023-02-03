@@ -1,0 +1,67 @@
+.thought-card-container {
+	width: 100%;
+}
+.thought-card-container h6 {
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 18px;
+}
+
+.thougth-card {
+	width: 95%;
+	padding: 20px;
+	border-radius: 10px;
+	background-color: #dcdcdc;
+	min-height: 350px;
+	position: relative;
+}
+
+@keyframes inputBottomToTop {
+	0% {
+		bottom: 0px;
+	}
+	25% {
+		bottom: 15px;
+	}
+	50% {
+		bottom: 30px;
+	}
+	75% {
+		bottom: 50px;
+	}
+	100% {
+		bottom: 70px;
+	}
+}
+.thougth-card input {
+	position: absolute;
+	bottom: 70px;
+	padding: 10px;
+	border-radius: 10px;
+	z-index: 3;
+
+	border: 5px solid black;
+	left: 20px;
+	right: 20px;
+	animation-name: inputBottomToTop;
+	animation-duration: 0.2s;
+}
+.add-button-thought {
+	bottom: 20px;
+	left: 20px;
+	position: absolute;
+	width: 70px;
+	display: flex;
+	align-items: center;
+	z-index: 2;
+}
+.add-button-thought .plus-icon {
+	border-radius: 50%;
+	background-color: black;
+	color: white;
+	padding: 5px;
+	width: 35%;
+	text-align: center;
+	cursor: pointer;
+	margin-right: 5px;
+}

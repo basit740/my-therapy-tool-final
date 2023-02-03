@@ -1,0 +1,79 @@
+.stepNineOfEleven {
+	margin: 20px 300px 20px 20px;
+}
+
+.stepNineOfEleven p:nth-child(2) {
+	text-align: justify;
+	margin-top: 25px;
+	color: #a8a8a8;
+}
+
+.stepNineOfEleven p:nth-child(3) {
+	text-align: justify;
+	margin-top: 45px;
+	color: #a8a8a8;
+	margin-bottom: 50px;
+}
+.stepNineOfEleven h1 {
+}
+.selectedTextArea {
+	width: 78%;
+	position: relative;
+}
+
+.text-area-wrapper {
+	position: relative;
+	width: 65%;
+	height: 200px;
+}
+.text-area-wrapper textarea {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	resize: none;
+	z-index: 1;
+	padding-right: 82px;
+}
+.add-button {
+	top: 5%;
+	right: 10px;
+	position: absolute;
+	width: 70px;
+	display: flex;
+	align-items: center;
+	z-index: 2;
+}
+.add-button .plus-icon {
+	border-radius: 50%;
+	background-color: black;
+	color: white;
+	padding: 5px;
+	width: 35%;
+	text-align: center;
+	cursor: pointer;
+	margin-right: 5px;
+}
+
+.selectedItem {
+	display: inline-flex;
+}
+
+.selectedItem div:nth-child(1) {
+	border-radius: 15px;
+	padding: 3px 10px 3px 10px;
+	margin: 10px;
+	border: 1px solid #707070;
+}
+
+
+
+/**************MEDIA QUERIES FOR MOBILE**************/
+@media only screen and (max-width: 768px) {
+	.stepNineOfEleven {
+		margin: 0px;
+	}
+
+}

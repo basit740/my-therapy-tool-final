@@ -1,0 +1,166 @@
+.login-screen {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+.banner {
+	background-color: black;
+	color: white;
+	background-image: url('../../images//register-banner.jpg');
+	width: 50%;
+	height: 100%;
+	/* position: fixed; */
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.form-container {
+	width: 50%;
+
+	height: 100%;
+	background-color: white !important;
+}
+.actual-content {
+	margin: 0 auto !important;
+	width: 65%;
+}
+
+.actual-content h1 {
+	text-align: center;
+}
+.actual-content h1 img{
+	width: 30rem;
+	height: 12.5rem; 
+}
+.text-container {
+	text-align: center;
+	padding-top: 50px;
+}
+
+/* .nospacing {
+	 margin: 0 !important;
+	padding: 0 !important; 
+} */
+
+.col-md-7 {
+	height: auto;
+}
+
+.subtitle {
+	color: #bdc1ca;
+	font-size: 1.1em;
+}
+
+.signup {
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-radius: 5px;
+	border: 0;
+}
+/* .signin-text {
+
+	 margin-top: 30px !important;
+	margin-left: auto !important;
+	margin-right: auto !important; 
+} */
+p {
+	text-align: center;
+}
+p a {
+	text-decoration: none;
+	color: black;
+	cursor: pointer;
+}
+p a:hover {
+	font-weight: bold;
+	text-decoration: none;
+	color: black;
+}
+
+.button-container {
+	text-align: center;
+	width: 100%;
+}
+
+.register-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	overflow: auto;
+	overflow-y: scroll;
+	width: 50%;
+	background-color: white;
+}
+.terms {
+	bottom: 0;
+}
+
+/* CSS for Sign In */
+
+.button-container-sign-in {
+	display: flex;
+	justify-content: space-between;
+}
+
+.button-container-sign-in .signin {
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-radius: 5px;
+	width: 48%;
+}
+
+.bc-black {
+	background-color: black;
+	color: white;
+}
+.bc-white {
+	background-color: white;
+	color: black;
+}
+.forgot-password {
+	text-align: right;
+}
+
+.feedback-container {
+	margin-bottom: 150px;
+}
+
+@media only screen and (max-width: 600px) {
+	body {
+		overflow-x: hidden !important;
+		width: 100%;
+	}
+	.banner{
+		display: none;
+	}
+	.actual-content h1 img{
+		width: 100%;
+	}
+	.actual-content{
+		padding: 0 10px;
+	}
+	.form-container {
+		width: 100%;
+		overflow-x: hidden;
+	}
+
+	.actual-content {
+		width: 100%;
+		text-align: center;
+	}
+
+	.btn-container {
+		width: 100% !important;
+	}
+	.btn-container .sign-up-btn {
+		width: 100%;
+		margin-right: 15px !important;
+		margin-left: 15px !important;
+	}
+}

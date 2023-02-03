@@ -1,0 +1,34 @@
+.landing-page-container {
+	padding-top: 110px;
+
+	margin: 0 40px 40px 40px;
+	margin-bottom: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.landing-page {
+	text-align: center;
+	background-color: white;
+	padding: 30px;
+	border-radius: 20px;
+	max-width: 500px;
+	min-height: 300px;
+	margin: 0 auto;
+}
+.landing-page h2,
+a {
+	text-align: center;
+}
+.welcome-action {
+	width: 200px;
+	margin: 0 auto;
+}
+.welcome-action a {
+	text-align: center;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: black;
+	color: white;
+}

@@ -1,0 +1,13 @@
+.tag {
+	padding: 10px;
+	border-radius: 25px;
+	margin: 5px;
+	cursor: pointer;
+	display: inline-flex;
+	border: 1px solid black;
+}
+.tag__selected {
+	background-color: gray;
+	color: white;
+	border: none;
+}

@@ -1,0 +1,44 @@
+.last-page-container {
+	padding-top: 110px;
+
+	margin: 0 40px 40px 40px;
+	margin-bottom: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.last-page {
+	text-align: center;
+	background-color: white;
+	padding: 30px;
+	border-radius: 20px;
+	width: 500px;
+	height: auto;
+	margin: 0 auto;
+}
+.last-page h2,
+a {
+	text-align: center;
+}
+.last-page-action {
+	width: 200px;
+	margin: 0 auto;
+}
+.last-page-action a {
+	text-align: center;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: black;
+	color: white;
+}
+
+.doc-form {
+}
+
+.doc-form input {
+	padding: 5px;
+	border-radius: 5px;
+	background-color: white;
+	border: 1px solid black;
+}

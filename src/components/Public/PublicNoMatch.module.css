@@ -1,0 +1,15 @@
+.public-no-match-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.public-no-match {
+	display: flex;
+
+	width: 800px;
+	height: 300px;
+	border-radius: 20px;
+	align-items: center;
+	justify-content: center;
+}

@@ -1,0 +1,227 @@
+.Body {
+	padding: 60px 25px 10px 25px;
+	display: flex;
+	color: black;
+}
+
+.sectionOne {
+	background-color: white;
+	margin-top: 50px;
+	width: 23%;
+	margin-right: 5px;
+	border-radius: 3px;
+	padding: 10px;
+	max-height: calc(100vh - 200px);
+	overflow-y: scroll;
+	scrollbar-width: none;
+	-ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+.sectionOne::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+}
+.progress {
+	margin-bottom: 15px;
+	background-color: white;
+	font-weight: bold;
+	margin: 20px 0 5px 20px;
+}
+
+.sectionTwo {
+	background-color: white;
+	margin-top: 50px;
+	position: relative;
+	width: 77%;
+	border-radius: 3px;
+	padding: 25px 25px 25px 25px;
+	max-height: calc(100vh - 200px);
+	overflow-y: scroll;
+	scrollbar-width: none;
+	-ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+.sectionTwo::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+}
+.progressbar {
+	position: relative;
+	justify-content: space-around;
+}
+.progressbar::before {
+	content: '';
+	position: absolute;
+	top: 49%;
+	transform: translateY(-50%);
+	left: 20px;
+	height: 1010px;
+	width: 1px;
+	background-color: #dcdcdc;
+}
+.progressStep {
+	width: 1.25rem;
+	height: 1.25rem;
+	border: 1px solid #dcdcdc;
+	background-color: #dcdcdc;
+	border-radius: 50%;
+	text-align: center;
+	transform: translateX(-50%);
+
+}
+
+.progressStep-Active {
+	background-color: black;
+	z-index: 10;
+}
+
+.progressStep-ActiveSign {
+	transform: translate(-65%, -60%);
+	position: absolute;
+	width: 0.6rem;
+	height: 0.6rem;
+	background-color: black;
+	border-radius: 50%;
+}
+.step-text {
+	opacity: 0.8;
+}
+.step-text:hover {
+	opacity: 1;
+}
+.progressStep-ActiveMark {
+	transform: translate(-65%, -110%);
+	position: absolute;
+	width: 0.6rem;
+	font-size: 6px;
+	height: 0.6rem;
+}
+
+.inlineProgress {
+	display: flex;
+	margin-top: 2px;
+	margin-bottom: 10px;
+	height: 82px;
+	cursor: pointer;
+}
+
+.inlineProgress div:nth-child(1) {
+	margin: 10px;
+}
+
+.inlineProgress div:nth-child(2) {
+	margin: 1px;
+	text-align: left;
+	justify-content: left;
+}
+
+.inlineProgress div div:nth-child(1) {
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.inlineProgress div div:nth-child(2) {
+	font-size: 13px;
+	padding-left: 10px;
+	color: #a8a8a8;
+}
+
+.prevOrSave {
+	/* bottom: 20px; */
+	text-align: end;
+	margin-top: 50px;
+	/* position: absolute;
+	right: 5%; */
+}
+
+.prevOrSave button:nth-child(1) {
+	/* margin: 0 7px 0 0; */
+	background-color: #dddddd;
+	color: 22ee2e;
+	border: none;
+	padding: 7px 45px 7px 45px;
+	border-radius: 6px;
+	margin: 0 5px;
+	min-width: 149px;
+	max-width: 200px;
+}
+
+.prevOrSave button:nth-child(2) {
+	/* margin: 0 0 0 7px; */
+	background-color: #2e2e2e;
+	color: #dddddd;
+	border: none;
+	padding: 7px 15px 7px 15px;
+	margin: 0 5px;
+	border-radius: 6px;
+	min-width: 149px;
+	max-width: 200px;
+}
+
+.sectionOneMobile{
+	margin: 20px 0px 10px;
+	padding: 10px;
+	display: none;
+	max-width: 100%;
+	position: fixed;
+	left: 0px;
+	top: 50px;
+	background-color: white;
+	z-index: 5555;
+	overflow-x: scroll;
+	scrollbar-width: none;
+	align-items: center;
+	-ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+.sectionOneMobile::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+}
+.progressStepMobile{
+	padding: 10px 10px;
+	height: 40px;
+	line-height: 20px;
+	min-width: 120px;
+	text-align: center;
+	margin: 0 10px;
+	border-radius: 10px;
+	border: 1px solid black;
+}
+.progressStepMobile-Active{
+	background-color: #2e2e2e;
+	color: white;
+
+}
+/**************MEDIA QUERIES FOR MOBILE**************/
+@media only screen and (max-width: 768px) {
+	.Body{
+		padding: 60px 0 10px;
+		display: flex;
+		flex-direction: column;
+	}
+	.sectionOneMobile{
+		display: flex;
+	}
+	.sectionOne {
+		display: none;
+	}
+	.sectionTwo {
+		width: 100%;
+		max-height: 100%;
+		margin-top: 70px;
+	}
+	.prevOrSave button:nth-child(1) {
+		margin: 10px 5px;
+		min-width: auto;
+		max-width: 100%;
+		width: 100%;
+	}
+	.prevOrSave button:nth-child(2) {
+		min-width: auto;
+		max-width: 100%;
+		width: 100%;
+
+	}
+	
+}

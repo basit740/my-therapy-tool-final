@@ -1,0 +1,10 @@
+.thought-cards-container {
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.col {
+	padding-right: 0;
+	padding-left: 5px;
+}

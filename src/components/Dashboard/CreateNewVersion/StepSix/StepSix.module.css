@@ -1,0 +1,25 @@
+.sectionReachOut {
+  margin: 20px 300px 20px 20px;
+}
+
+.sectionReachOut p:nth-child(2) {
+    text-align: justify;
+    margin-top: 15px;
+    color: #A8A8A8;
+}
+
+.sectionReachOut p:nth-child(3) {
+    text-align: justify;
+    margin-top: 35px;
+    color: #A8A8A8;
+}
+
+
+
+/**************MEDIA QUERIES FOR MOBILE**************/
+@media only screen and (max-width: 768px) {
+	.sectionReachOut {
+		margin: 0px;
+	}
+
+}

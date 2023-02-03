@@ -1,0 +1,202 @@
+.new-version-container {
+	padding-top: 110px;
+
+	margin: 0 40px 40px 40px;
+	margin-bottom: 20px;
+}
+
+.new-version {
+	padding: 10px 15px 15px 15px;
+	background-color: white;
+	width: 100%;
+	border-radius: 10px;
+}
+.choose-version label {
+	text-transform: uppercase;
+	display: inline-block;
+	margin: 0 5px 0 0;
+}
+
+.new-version-action {
+	display: flex;
+	align-items: center;
+}
+.choose-version {
+	min-width: 52%;
+	display: flex;
+	align-items: center;
+}
+.choose-version select {
+	padding: 5px;
+
+	border-radius: 5px;
+	width: 78%;
+}
+.new-version-button {
+}
+.new-version-button a {
+	position: relative;
+	/* float: right; */
+	padding: 5px 45px 5px 45px;
+
+	background-color: black;
+	color: white;
+	border-radius: 5px;
+	border: 1px solid black;
+}
+
+/* .new-version-button {
+	position: absolute;
+} */
+.new-version-button {
+}
+.new-version-form-container {
+	/* position: absolute;
+	right: 250px;
+	bottom: 12px; */
+}
+.new-version-form-container input {
+	/* width: 300px;
+	border-radius: 5px;
+	padding-left: 5px;
+	padding-right: 5px; */
+}
+
+.new-version-form-container input[type='submit'] {
+	/* width: 150px;
+	margin-left: 5px; */
+}
+
+.black-line {
+	margin-top: 20px;
+}
+
+.continue-version {
+	margin-top: 20px;
+	width: 100%;
+	display: flex;
+}
+
+.continue-version .first-box {
+	width: 28%;
+	margin-right: 40px;
+}
+.first-box h6 {
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+.first-box-content {
+	width: 100%;
+	margin-right: 30px;
+	padding: 105px 15px 105px 15px;
+	background-color: #dcdcdc;
+	border-radius: 5px;
+}
+.first-box-content button {
+	padding: 5px 40px 5px 40px;
+	background-color: black;
+	color: white;
+	border-radius: 5px;
+}
+.first-box-content-tag {
+	margin-bottom: 50px;
+}
+.first-box-content-tag span {
+	font-size: 14px;
+}
+
+/* Steps css here */
+
+.continue-version .second-box {
+	width: 35%;
+	margin-right: 20px;
+}
+
+/*Common CSS */
+
+.h6-upper {
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+.continue-version .third-box {
+	width: 35%;
+}
+
+@media only screen and (max-width: 600px) {
+	.new-version-container {
+		width: 100%;
+		margin: 0 !important;
+		margin-bottom: 10px !important;
+	}
+
+	.new-version-button-content a {
+		width: 100%;
+		margin-top: 5px;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	.choose-version select {
+		width: 100%;
+	}
+
+	.continue-version {
+		margin-top: 20px;
+		width: 100% !important;
+		display: block;
+	}
+
+	.continue-version .first-box {
+		width: 100% !important;
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+
+	.first-box-content {
+		margin-right: 10px;
+		padding: 15px;
+	}
+
+	.continue-version .first-box .steps__first_five {
+		overflow-y: scroll !important;
+	}
+	.continue-version .first-box .steps__second_five {
+		overflow-y: scroll !important;
+	}
+	.continue-version .second-box {
+		width: 100% !important;
+		margin: 0 !important;
+	}
+	.continue-version .second-box h6.h6-upper {
+		margin-top: 5px;
+	}
+
+	#h6-justifier {
+		display: none;
+	}
+	.continue-version .third-box {
+		width: 100% !important;
+	}
+}
+
+
+/***************MEDIA QUERIES**************/
+@media only screen and (max-width: 768px){
+	.new-version-action {
+		flex-direction: column;
+	}
+	.choose-version {
+		width: 100%;
+		flex-direction: column;
+	}
+	.new-version-button {
+		margin: 10px;
+		width: 100%;
+	}
+	.new-version-button-content a {
+		display: inline-block;
+	}
+
+}

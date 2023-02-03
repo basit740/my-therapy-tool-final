@@ -1,0 +1,26 @@
+.results {
+	text-align: center;
+	margin-top: 50px;
+}
+
+.picture-circle {
+	text-align: center;
+	background-color: #dcdcdc;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	margin-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+/**************MEDIA QUERIES FOR MOBILE**************/
+@media only screen and (max-width: 768px) {
+	.results {
+		margin-bottom: 70px;
+	}
+	
+
+}

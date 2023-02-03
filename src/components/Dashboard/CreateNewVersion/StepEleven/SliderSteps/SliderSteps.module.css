@@ -1,0 +1,39 @@
+.slider-steps-container {
+	position: relative;
+}
+
+.steps-info {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+.dots {
+	display: flex;
+}
+
+.dots .dot {
+	margin-right: 5px;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: #dddddd;
+	cursor: pointer;
+}
+.dots .active {
+	background-color: gray;
+}
+
+.actions {
+	display: flex;
+	justify-content: space-between;
+}
+.actions div {
+	cursor: pointer;
+}
+.hidden {
+	opacity: 0;
+	cursor: default;
+}
+.shown {
+	opacity: 1;
+}

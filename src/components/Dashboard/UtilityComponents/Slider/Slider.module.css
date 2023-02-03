@@ -1,0 +1,21 @@
+.personal-slider h5 {
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+.slider {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.track {
+	color: gray;
+}
+.rail {
+	color: #dddddd;
+}
+
+.thumb {
+	color: gray;
+	width: 25px;
+	height: 25px;
+}

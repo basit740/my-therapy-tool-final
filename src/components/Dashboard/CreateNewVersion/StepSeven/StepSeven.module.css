@@ -1,0 +1,49 @@
+.step-seven {
+	margin: 20px 250px 20px 20px;
+	overflow: hidden;
+}
+
+.step-seven p:nth-child(2) {
+	text-align: justify;
+	margin-top: 15px;
+	color: #a8a8a8;
+}
+
+.step-seven p:nth-child(3) {
+	text-align: justify;
+	margin-top: 30px;
+	color: #a8a8a8;
+	margin-bottom: 30px;
+}
+.step-seven p:nth-child(4) {
+	text-align: justify;
+	color: #a8a8a8;
+	margin-bottom: 20px;
+}
+
+.step-seven-action {
+}
+
+.step-seven-action input,
+button {
+	padding: 5px;
+	border-radius: 5px;
+}
+.step-seven-action button {
+	margin-left: 15px;
+	cursor: pointer;
+}
+
+.step-seven-action button:hover {
+	background-color: black;
+	color: white;
+}
+
+
+/**************MEDIA QUERIES FOR MOBILE**************/
+@media only screen and (max-width: 768px) {
+	.step-seven {
+		margin: 0px;
+	}
+
+}

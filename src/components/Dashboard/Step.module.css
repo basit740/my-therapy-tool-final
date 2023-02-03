@@ -1,0 +1,49 @@
+.step {
+	border: 1px solid #ccc;
+	padding: 15px;
+	width: 100%;
+	margin-bottom: 15px;
+	border-radius: 5px;
+	height: 70px;
+}
+
+.step__info {
+	display: flex;
+}
+.step__info__status {
+	margin-right: 10px;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #dcdcdc;
+}
+.step__info__content {
+	margin-top: -5px;
+}
+.step__info__content .date {
+	font-size: 14px;
+}
+.step__info h6 {
+	margin-top: 0;
+	padding-top: 0;
+	margin-bottom: 0;
+	font-size: 0.813rem;
+}
+
+.step__actions {
+	text-align: right;
+	margin-top: -45px;
+}
+.step__actions div {
+	padding-left: 12px;
+}
+
+.step__action {
+	color: black;
+	margin-right: 0px;
+	font-weight: bold;
+}
+
+a.step__action:hover {
+	color: black;
+}

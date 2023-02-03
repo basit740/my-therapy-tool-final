@@ -1,0 +1,62 @@
+.goal {
+	border: 1px solid black;
+	position: relative;
+	margin-bottom: 5px;
+	border-radius: 10px;
+	padding: 5px;
+	background-color: #dcdcdc;
+	animation-name: fadeIn;
+	animation-duration: 0.5s;
+	height: auto;
+	vertical-align: top;
+	animation: fade-in 0.4s ease;
+}
+.goal:hover {
+	opacity: 100%;
+}
+@keyframes fade-in {
+	0% {
+		top: 0;
+	}
+	20% {
+		top: 0.2;
+	}
+	40% {
+		top: 0.4;
+	}
+	60% {
+		top: 0.6;
+	}
+	80% {
+		top: 0.8;
+	}
+	100% {
+		top: 1;
+	}
+}
+@keyframes grow-width {
+	from {
+		width: 0px;
+	}
+	to {
+		width: 20px;
+	}
+}
+
+.goal-delete-btn {
+	position: absolute;
+	top: -1px;
+	right: 0px;
+	width: 20px;
+	height: 20px;
+	background-color: red;
+	color: white;
+	border-top-right-radius: 5px;
+	border-top: 1px solid red;
+	border-bottom-left-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	animation: grow-width 0.4s ease;
+}

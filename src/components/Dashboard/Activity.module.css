@@ -1,0 +1,32 @@
+.activity {
+	padding: 20px 20px;
+	border-top: 1px solid #ccc;
+	width: 100%;
+}
+.activity__left {
+	display: flex;
+}
+.activity__right {
+	float: right;
+	margin-top: -40px;
+}
+
+.activity-left .activity__sign {
+}
+
+.ball {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #dcdcdc;
+}
+.activity__sign {
+	margin-right: 10px;
+	margin-top: 5px;
+}
+.activity__info h6 {
+	margin-bottom: 0px;
+}
+.activity__info span {
+	font-size: 14px;
+}

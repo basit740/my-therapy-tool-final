@@ -1,0 +1,64 @@
+.takeAction {
+    margin:20px 300px 20px 20px;
+}
+
+.takeAction p:nth-child(2) {
+    text-align: justify;
+    margin-top: 15px;
+    color: #A8A8A8;
+}
+
+.takeAction p:nth-child(3) {
+    text-align: justify;
+    margin-top: 35px;
+    color: #A8A8A8;
+}
+
+.actionParagraph {
+    text-align: justify;
+    margin-top: 15px;
+}
+
+
+
+.actionArea {
+    width: 65%;
+}
+
+.addDate {
+    display: flex;
+    /* text-align: end; */
+    width: 65%;
+}
+
+.addDate div input:nth-child(1) {
+    border: 1px solid #A8A8A8;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.addDate div:nth-child(2) {
+    float: right;
+    width: 100%;
+    text-align: end;
+}
+
+.addDate div button.AddMoreDate {
+    background-color: white;
+    border: none;
+    text-align: end;
+
+    display: inline-flex;
+    margin-top: 10px;
+    float: right;
+}
+
+
+
+/**************MEDIA QUERIES FOR MOBILE**************/
+@media only screen and (max-width: 768px) {
+	.takeAction {
+		margin: 0px;
+	}
+
+}

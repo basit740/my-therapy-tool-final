@@ -1,0 +1,183 @@
+header {
+	width: 100%;
+	background-color: white;
+	color: gray;
+	height: 70px;
+	position: fixed;
+	margin-bottom: 40px;
+	z-index: 100;
+}
+header nav {
+	display: flex;
+}
+header nav h4 {
+	margin: 0;
+	bottom: 0;
+	margin-top: 20px;
+	color: black;
+}
+
+header nav .brand {
+	width: 25%;
+	padding-left: 15px;
+	display: flex;
+}
+
+.logo-dot {
+	margin-right: 10px;
+	margin-top: 27px;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: black;
+}
+
+header nav .nav-links {
+	width: 70%;
+	float: right;
+	margin-top: 25px;
+	margin-left: 100px;
+	display: flex;
+}
+nav .nav-links a {
+	padding-bottom: 18px;
+	margin-right: 40px;
+	text-decoration: none;
+	color: gray;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+nav .nav-links a:hover {
+	border-bottom: 3px solid black;
+	color: black;
+}
+.brand-link {
+	opacity: 0.7;
+}
+.brand-link:hover {
+	text-decoration: none;
+	color: inherit;
+	opacity: 1;
+}
+.navlink-active {
+	border-bottom: 3px solid black;
+	color: black;
+}
+.nav-links .logout-link:hover {
+	text-decoration: none;
+	color: inherit;
+	opacity: 1;
+	border-bottom: 3px solid black;
+	color: #ffcc00;
+}
+
+/* Hamburger Menu */
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+	position: fixed;
+	width: 36px;
+	height: 36px;
+	left: 15px;
+	top: 15px;
+	display: none;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+	background: #373a47;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+	background: #322727;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+	height: 30px;
+	width: 30px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+	background: #bdc3c7;
+}
+
+/*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+.bm-menu-wrap {
+	position: fixed;
+	height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+	background: white;
+	/* padding: 2.5em 1.5em 0; */
+	padding-top: 40px;
+	font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+	fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+	color: #b8b7ad;
+	padding: 0.8em;
+	display: flex;
+	flex-direction: column !important;
+	align-items: left !important;
+	justify-content: flex-start;
+}
+
+/* Individual item */
+.bm-item {
+	text-decoration: none !important;
+	color: black !important;
+	flex-direction: column !important;
+	margin-bottom: 30px;
+	opacity: 0.7;
+	width: auto;
+	font-size: 25px;
+}
+.bm-item:last-child {
+	color: #ffcc00 !important;
+}
+.bm-item:hover {
+	opacity: 1;
+	/* border-bottom: 3px solid black !important; */
+}
+
+/* Styling of overlay */
+/* .bm-overlay {
+	background: rgba(0, 0, 0, 0.3);
+} */
+
+@media only screen and (max-width: 600px) {
+	.brand {
+		width: 100% !important;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.brand .logo-dot {
+		margin: 0;
+		margin-right: 5px;
+		margin-top: 18px;
+	}
+	.nav-links {
+		display: none !important;
+	}
+
+	/* // hamburger button */
+
+	.bm-burger-button {
+		display: block;
+	}
+}
